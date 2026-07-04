@@ -33,3 +33,42 @@ header{
 h2{
     margin-bottom:20px;
 }
+
+.item{
+
+    border:1px solid #dcdcdc;
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:20px;
+    background:#fafafa;
+
+}
+
+.item-header{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:15px;
+
+}
+
+.item-header input{
+
+    width:20px;
+    height:20px;
+
+}
+
+.item-header label{
+
+    font-size:18px;
+    font-weight:600;
+
+}
+
+.item textarea{
+
+    width:100%;
+    min-height:90px;
+}

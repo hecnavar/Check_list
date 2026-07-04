@@ -1,34 +1,33 @@
-function cargarChecklist(){
+function cargarChecklist() {
 
-    const preguntas=[
-
+    const preguntas = [
         "Verificar alimentación",
         "Revisar LEDs",
         "Revisar ventiladores",
         "Revisar interfaces"
-
     ];
 
-    const contenedor=document.getElementById("checklist-container");
+    const contenedor = document.getElementById("checklist-container");
 
-    preguntas.forEach((pregunta,index)=>{
+    contenedor.innerHTML = "";
 
-        contenedor.innerHTML+=`
+    preguntas.forEach((pregunta, index) => {
 
-        <div class="item">
+        contenedor.innerHTML += `
+            <div class="item">
 
-            <label>
+                <div class="item-header">
+                    <input type="checkbox" id="check${index}">
+                    <label for="check${index}">
+                        ${pregunta}
+                    </label>
+                </div>
 
-                <input type="checkbox" id="check${index}">
+                <textarea
+                    placeholder="Escribe tus comentarios aquí..."
+                ></textarea>
 
-                ${pregunta}
-
-            </label>
-
-            <textarea placeholder="Comentarios"></textarea>
-
-        </div>
-
+            </div>
         `;
 
     });
