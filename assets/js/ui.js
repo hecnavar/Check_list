@@ -1,5 +1,7 @@
-function mostrarMensaje(texto){
+function mostrarEstado(texto){
 
-    alert(texto);
+    const estado=document.getElementById("status");
+
+    estado.innerHTML=texto;
 
 }
